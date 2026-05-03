@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 蒲团建筑定义 -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>MeditationCushion</defName>
+    <label>蒲团</label>
+    <description>一个简单的蒲团，用于打坐冥想。能够让人心情平静。</description>
+    
+    <!-- 图形设置 -->
+    <graphicData>
+      <texPath>Things/Building/MeditationCushion</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    
+    <!-- 建造成本 -->
+    <costList>
+      <Cloth>25</Cloth>
+      <WoodLog>8</WoodLog>
+    </costList>
+    
+    <!-- 基础属性 -->
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <Beauty>2</Beauty>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    
+    <!-- 建筑属性 -->
+    <size>(1,1)</size>
+    <pathCost>8</pathCost>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+    
+    <!-- 分类 -->
+    <category>Building</category>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    
+    <!-- 研究需求 -->
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    
+    <!-- 放置规则 -->
+    <placeWorkers>
+      <li>PlaceWorker_OnSteamGeyser</li>
+    </placeWorkers>
+    
+    <designationCategory>Furniture</designationCategory>
+  </ThingDef>
+</Defs>
